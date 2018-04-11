@@ -1,5 +1,5 @@
 class Dog
-  @@all=[]
+  @@all= []
   def initialize(name)
     @name = name
     @@all << name
@@ -8,5 +8,8 @@ class Dog
     @@all.each do|name|
       puts "#{name}"
     end
+  end
+  def self.clear_all
+    @@all.clear
   end
 end
